@@ -11,7 +11,7 @@
 #include <string.h>
 
 #define MAXLINE 4096
-#define BUFFSIZE 4096
+#define BUFSIZE 4096
 
 
 void err_quit(const char *fmt, ...);

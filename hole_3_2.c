@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 		err_sys("buf1 write error");
 	}
 
-	if (lseek(fd, 65536, SEEK_SET) == -1) {
+	if (lseek(fd, 65555555, SEEK_SET) == -1) {
 		err_sys("lseek error");
 	}
 

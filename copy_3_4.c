@@ -3,8 +3,8 @@
 int main(int argc, char *argv[])
 {
 	int n;
-	char buf[BUFFSIZE];
-	while ((n = read(STDIN_FILENO, buf, BUFFSIZE)) > 0) {
+	char buf[BUFSIZE];
+	while ((n = read(STDIN_FILENO, buf, BUFSIZE)) > 0) {
 		if (write(STDOUT_FILENO, buf, n) != n) {
 			err_sys("write error");
 		}

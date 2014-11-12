@@ -13,7 +13,7 @@ all: $(TARGETS)
 obj:
 	$Vmkdir $@
 
-CCFLAGS = -Wall
+CCFLAGS = -Wall -D_GNU_SOURCE
 CC = gcc
 
 -include $(DEPFILES)

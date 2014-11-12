@@ -3,7 +3,8 @@
 
 int main(int argc, char *argv[])
 {
-	if (lseek(STDIN_FILENO, 0, SEEK_CUR) == -1) {
+	off_t ls;
+	if ((ls = lseek(STDIN_FILENO, 0, SEEK_SET)) == -1) {
 		printf("cannot seek\n");
 	} else {
 		printf("seek OK\n");
